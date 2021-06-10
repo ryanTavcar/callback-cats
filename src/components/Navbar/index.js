@@ -2,7 +2,11 @@ import React from 'react';
 // import logo from '../../../src/logo.svg';
 // // import {ReactComponent as logo} from "../../images/logo.svg"
 import {FaBars} from 'react-icons/fa';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLink} from './NavbarElements';
+// import {BrowserRouter as Route} from 'react-router-dom';
+// import Home from '../../pages/home'
+// import Matches from '../../pages/Matches'
+
 
 
 const Navbar = ({ toggle }) => {
@@ -17,16 +21,16 @@ const Navbar = ({ toggle }) => {
                     <NavMenu>
                         <NavMenu>
                             <NavItem>
-                                <NavLinks>Home</NavLinks>
+                                <NavLink to="../../pages/home">Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLinks>Profile</NavLinks>
+                                <NavLink to="../../pages/profile">Profile</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLinks>Fav</NavLinks>
+                                <NavLink to="../../pages/Matches">Favourites</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLinks>About</NavLinks>
+                                <NavLink to="../../pages/about">About</NavLink>
                             </NavItem>
                         </NavMenu>
                     </NavMenu>
