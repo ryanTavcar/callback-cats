@@ -2,9 +2,7 @@ import React, {useState} from 'react'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 
-
-
-const Home = () => {
+const NavbarMain = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -20,4 +18,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default NavbarMain
