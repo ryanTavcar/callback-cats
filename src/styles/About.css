@@ -1,0 +1,12 @@
+.Developer-cards-container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Developer-card{
+    margin: 0 5rem;
+
+}

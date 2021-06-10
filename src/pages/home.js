@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
+import Match from './Match'
+import '../styles/Home.css'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
-const Home = () => {
+function Home() {
+
     return (
-        <div>
-            <h1>This is a Home page</h1>
+        <div className="logo-container">
+            <div>
+                <img className="desktop-logo" src={require('../catlogo.png').default} alt="callback cats logo"></img>
+            </div>
+            <h3>Purrr-haps We Can Cuddle Later?</h3>
         </div>
     )
 }
