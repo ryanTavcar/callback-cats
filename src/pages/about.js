@@ -3,9 +3,6 @@ import React from 'react'
 const About = () => {
     return (
         <div>
-<<<<<<< HEAD
-            <h1> this is about page</h1>
-=======
             <h2>CallBack Cats MEOOOW</h2>
             <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti 
                 quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
@@ -31,7 +28,6 @@ const About = () => {
             {window.location.pathname === '/about' && 
                 <button className="findMatches" style={{display: 'none'}}></button>
             }
->>>>>>> c47b481a7d0d70488f092f77a1e3a5a294ec7ca5
         </div>
     )
 }
