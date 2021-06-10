@@ -25,45 +25,46 @@ const Match = () => {
         fetchUrl();
     }, []);
 
-    function onMatchButton(_id, name, description, likes, dislikes, image, availability, suburbs, location) {
-        console.log(_id)
-        console.log(name)
-        console.log(description)
-        console.log(dislikes)
-        console.log(image)
-        console.log(availability)
-        console.log(suburbs)
-        console.log(location)
+    // function onMatchButton(_id, name, description, likes, dislikes, image, availability, suburbs, location) {
+    //     console.log(_id)
+    //     console.log(name)
+    //     console.log(description)
+    //     console.log(dislikes)
+    //     console.log(image)
+    //     console.log(availability)
+    //     console.log(suburbs)
+    //     console.log(location)
 
-        const payload = {
-            _id: _id,
-            name: name,
-            description: description,
-            likes: likes,
-            dislikes: dislikes,
-            image: image,
-            availability: availability,
-            suburbs: suburbs,
-            location: location,
-        };
+    //     const payload = {
+    //         _id: _id,
+    //         name: name,
+    //         description: description,
+    //         likes: likes,
+    //         dislikes: dislikes,
+    //         image: image,
+    //         availability: availability,
+    //         suburbs: suburbs,
+    //         location: location,
+    //     };
 
-        fetch("https://callbackcatsapi.herokuapp.com/match/add", {
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                method: "POST",
-                body: JSON.stringify( payload )
-                })
-            .then( (res) => res.json() )
-            .then( (data) => console.log(JSON.stringify(data)) )
-    }
+    //     fetch("https://callbackcatsapi.herokuapp.com/match/add", {
+    //             headers: {
+    //                 'Accept': 'application/json',
+    //                 'Content-Type': 'application/json'
+    //             },
+    //             method: "POST",
+    //             body: JSON.stringify( payload )
+    //             })
+    //         .then( (res) => res.json() )
+    //         .then( (data) => console.log(JSON.stringify(data)) )
+    // }
 
     return (
         <div className="main-container"> 
             {useData.map( ({ _id, name, description, likes, dislikes, image, availability, suburbs, location }) => (
                 <div className='container' key={_id}>
-                    <Card name={name}
+                    <Card id={_id} 
+                        name={name}
                         description={description}
                         likes={likes}
                         dislikes={dislikes}

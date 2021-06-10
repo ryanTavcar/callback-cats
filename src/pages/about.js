@@ -23,13 +23,13 @@ function About() {
             <h2 className="Heading" >Meet The Developers</h2>
             <div className="Developer-cards-container">
                 <div className="Developer-card" >
-                    <Card name={"Irina"} description={IrinaDes} image={"/bob-marly.jpg"}/>
+                    <Card name={"Irina"} description={IrinaDes} image={"bob-marly.jpg"}/>
                 </div>
                 <div className="Developer-card" >
-                    <Card name={"Ryan"} description={RyanDes} image={"/doge-licking-nose.jpg"}/>
+                    <Card name={"Ryan"} description={RyanDes} image={"doge-licking-nose.jpg"}/>
                 </div>
                 <div className="Developer-card" >
-                    <Card name={"Shravani"} description={ShravaniDes} image={"/pretty-kitty.jpg"}/>
+                    <Card name={"Shravani"} description={ShravaniDes} image={"pretty-kitty.jpg"}/>
                 </div>
                 
             </div>
