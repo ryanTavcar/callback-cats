@@ -4,7 +4,7 @@ import NavbarMain from './components/NavbarMain';
 import Matches from './pages/Matches.js';
 import Match from './pages/Match.js';
 import Confirmation from './pages/Confirmation.js';
-import Home from './pages/home';
+import Home from './pages/';
 import About from './pages/about';
 import Profile from './pages/profile'
 
@@ -14,20 +14,17 @@ function App() {
       <Router>
         <NavbarMain />
           <Switch>
+            <Route exact path='/index'>
+              <Home />
+            </Route >
             <Route exact path='/pages/matches'>
               <Matches />
             </Route>
-            <Route exact path='/pages/users/:id'>
+            <Route exact path='/pages/Match'>
               <Match />  
             </Route>
             <Route exact path='/pages/confirmation'>
               <Confirmation />
-            </Route >
-            <Route exact path='/pages/home'>
-              <Home />
-            </Route >
-            <Route exact path='/pages/home'>
-              <Home />
             </Route >
             <Route exact path='/pages/about'>
               <About />

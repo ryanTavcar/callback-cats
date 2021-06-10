@@ -7,21 +7,21 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLink} fr
 // import Home from '../../pages/home'
 // import Matches from '../../pages/Matches'
 
-
+const logo1 = require('../../catlogo1.png');
 
 const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'></NavLogo>
+                    <NavLogo to="/"><img scr={logo1} alt=""/></NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavMenu>
                             <NavItem>
-                                <NavLink to="../../pages/home">Home</NavLink>
+                                <NavLink to="../index">Home</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink to="../../pages/profile">Profile</NavLink>
