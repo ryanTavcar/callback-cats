@@ -20,7 +20,7 @@ function App() {
             <Route exact path='/pages/matches'>
               <Matches />
             </Route>
-            <Route exact path='/pages/users/:id'>
+            <Route exact path='/pages/Match'>
               <Match />  
             </Route>
             <Route exact path='/pages/confirmation'>
