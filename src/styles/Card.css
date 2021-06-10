@@ -1,18 +1,13 @@
-.main-container {
-    width: 100vw;
-    height: 1vh;
-}
-
 .container {
-    display:flex;
-    justify-content: center;
+
     margin-top:5vh;
+    width: 20vw;
 }
 .cardContainer{
     position: relative;
     width:550px;
     padding: 20px;
-    width: 40vw;
+    width: 30vw;
     border-radius: 25px;
     background-position: center;
     box-shadow: 0px 18px 53px 0px rgba(0,0,0,0.3);
@@ -56,9 +51,10 @@ img{
 }
 
 .Card {
-    width: 20vw;
+    width: 100vw;
     height: auto;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
