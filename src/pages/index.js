@@ -1,6 +1,6 @@
 import React from 'react';
 import Match from './Match'
-import '../styles/Home.css'
+import '../styles/Index.css'
 import {
     BrowserRouter as Router,
     Switch,
