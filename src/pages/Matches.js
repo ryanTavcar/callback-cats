@@ -99,17 +99,18 @@ const Matches = () => {
                         <div className='container'>
                             <div className = 'cardContainer' key={_id}>
                                 <div className="cardImage">
-                                    <img src={image} alt={name} height='400px' width='100%'/>
+                                    <img src={`/`+ image} alt={name} height='400px' width='100%'/>
                                     {/* height='200px' width='fit-content' */}
                                 </div>
                                 <div>
+                                {console.log(image)}
                                     <h3>{name}</h3>
                                     <p>{description}</p>
                                     <p>Likes: {likes}</p>
                                     <p>Dislikes: {dislikes}</p>
                                     <p>Location: {location}</p>
                                     <p>Suburb: {suburb}</p>
-                                    <p>availability: {availability}</p>
+                                    <p>Availability: {availability}</p>
                                 </div>
                                 <div className='cardButtons'>
                                 <IconButton className='crossButton'>
