@@ -11,13 +11,13 @@ function App() {
       <Router>
         <NavbarMain />
           <Switch>
-            <Route path='/pages/matches'>
+            <Route exact path='/pages/matches'>
               <Matches />
             </Route>
-            <Route path='/pages/users/:id'>
+            <Route exact path='/pages/users/:id'>
               <Match />  
             </Route>
-            <Route path='/pages/confirmation'>
+            <Route exact path='/pages/confirmation'>
               <Confirmation />
             </Route >
         </Switch>
