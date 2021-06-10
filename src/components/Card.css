@@ -1,0 +1,17 @@
+ .cardContainer{
+    position: relative;
+    width:550px;
+    padding: 20px;
+    max-width: 80vw; 
+    height: 80vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 18px 53px 0px rgba(0,0,0,0.3);
+}
+.cardButtons {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #faebeb;
+}

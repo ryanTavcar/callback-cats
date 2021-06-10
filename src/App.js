@@ -9,16 +9,16 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path='/'>
+          <Route exact path='/'>
           <Header />
           </Route>
-          <Route path='/matches'>
+          <Route exact path='/matches'>
             <Matches />
           </Route>
-          <Route path='/users/:id'>
+          <Route exact path='/users/:id'>
             <Match />  
           </Route>
-          <Route path='/confirm'>
+          <Route exact path='/confirm'>
             <Confirmation />
           </Route >
         </Switch>
