@@ -4,7 +4,18 @@
      margin-top:5vh;
     
  }
- .cardContainer{
+ /* .cardContainer{
+.main-container {
+    width: 100vw;
+    height: 1vh;
+} */
+
+/* .container {
+    display:flex;
+    justify-content: center;
+    margin-top:5vh;
+} */
+.cardContainer{
     position: relative;
     width:550px;
     padding: 20px;
@@ -46,4 +57,16 @@ img{
     background-color: white; 
     border-color:rgb(51, 29, 29); 
     
+}
+
+.findMatch {
+    display: none;
+}
+
+.Card {
+    width: 20vw;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
 }
