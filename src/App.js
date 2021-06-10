@@ -1,26 +1,25 @@
-
+// import './App.css';
 import {BrowserRouter as Router,Switch,Route } from 'react-router-dom';
-import Header from './components/Header.js'
-import Matches from './components/Matches.js'
-import Match from './components/Match.js'
-import Confirmation from './components/Confirmation.js'
+import NavbarMain from './components/NavbarMain'
+import Matches from './pages/Matches.js'
+import Match from './pages/Match.js'
+import Confirmation from './pages/Confirmation.js'
+
 function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route exact path='/'>
-          <Header />
-          </Route>
-          <Route exact path='/matches'>
-            <Matches />
-          </Route>
-          <Route exact path='/users/:id'>
-            <Match />  
-          </Route>
-          <Route exact path='/confirm'>
-            <Confirmation />
-          </Route >
+        <NavbarMain />
+          <Switch>
+            <Route exact path='/pages/matches'>
+              <Matches />
+            </Route>
+            <Route exact path='/pages/users/:id'>
+              <Match />  
+            </Route>
+            <Route exact path='/pages/confirmation'>
+              <Confirmation />
+            </Route >
         </Switch>
       </Router>
     </div>
