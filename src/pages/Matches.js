@@ -3,7 +3,7 @@ import React,{useState,useEffect} from 'react';
 import '../styles/Card.css';
 import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 import CancelOutlinedIcon from '@material-ui/icons/CancelOutlined';
-
+import IconButton from '@material-ui/core/IconButton';
 
 const Matches = () => {
 
@@ -37,28 +37,33 @@ const Matches = () => {
             location: 'Melbourne'
         }]
         const [cats, setCats] = useState((catsArray));
-            
-        // useEffect(() => {
-        //       setPeople([...cats, ])
-        // },[]);
+        let fav =[]
 
         return (
                 <div> 
                     {cats.map(cat => (
-                        <div className = 'cardContainer' key={cat.name}>
-                            <div className="cardImage">
-                                <img src={cat.url} alt={cat.name} height='200px' width='fit-content'/>
+                        <div className='container'>
+                            <div className = 'cardContainer' key={cat.name}>
+                                <div className="cardImage">
+                                    <img src={cat.url} alt={cat.name} height='400px' width='100%'/>
+                                    {/* height='200px' width='fit-content' */}
+                                </div>
+                                <div>
+                                    <h3>{cat.name}</h3>
+                                    <p>{cat.description}</p>
+                                </div>
+                                <div className='cardButtons'>
+                                <IconButton className='crossButton'>
+                                    <CancelOutlinedIcon fontSize='large' />
+                                </IconButton>
+                                {/* <IconButton> */}
+                                    <button className='seemore'>Seemore</button>
+                                {/* </IconButton> */}
+                                <IconButton className='yesButton'>    
+                                    <CheckCircleOutlineIcon fontSize='large'/>
+                                </IconButton>
+                                </div>
                             </div>
-                            <div>
-                                <h3>{cat.name}</h3>
-                                <p>{cat.description}</p>
-                            </div>
-                            <div className='cardButtons'>
-                                <CancelOutlinedIcon fontSize='large' />
-                                <button>Seemore</button>
-                                <CheckCircleOutlineIcon fontSize='large'/>
-                            </div>
-                            
                         </div>
                     ))}
                 </div>
