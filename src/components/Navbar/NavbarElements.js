@@ -1,7 +1,7 @@
 import { Link as LinkR} from 'react-router-dom';
 // import { Link as LinkS} from 'react-scroll';
 import styled from 'styled-components';
-
+import '../../styles/Navbar.css'
 
 export const Nav = styled.nav`
     background: ;
@@ -77,7 +77,7 @@ export const NavLink = styled(LinkR)`
     cursor: pointer;
     margin: 20px;
     font-size: 1.5rem;
-
+    font-family: 'Roboto', sans-serif;
     margin-top: 20px;   
 
     &.active{
