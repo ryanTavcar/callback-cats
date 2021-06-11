@@ -40,7 +40,7 @@ const Matches = () => {
 
     return (
         <div>
-            <h1>This is match page</h1>
+            <h3>Checkout all your favorite matches here</h3>
 
             <div className="main-container"> 
             {useData.map( ({ _id, name, description, likes, dislikes, image, availability, suburbs, location }) => (
