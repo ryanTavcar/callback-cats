@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../styles/Card.css';
+import '../styles/Card.css';
 
 function Card(props) {
 
@@ -41,7 +41,6 @@ function Card(props) {
     
 
     return (
-       
             <div className="cardContainer">
                 <div >
                     <img src={'/' + props.image} alt="card-img" height='300px' width='100%'/>

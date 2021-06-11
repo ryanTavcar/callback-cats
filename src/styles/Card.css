@@ -34,12 +34,7 @@
     margin-bottom: 10px;
     /* border: 1px solid black; */
 }
-.cardButtons {
-    border-style: none;
-    background-color: transparent;
-    border: 1px groove white;
-    border-radius: 20px;
-}
+
 img{
     max-width: 100%;
     max-height: 50%;
@@ -50,26 +45,24 @@ img{
 .cardText {
     font-style: italic;
 }
-/* .cardText h3 {
-    position: absolute;
-    bottom: 10px;
-    color: black;
-}
 
-.findMatch {
-    display: none;
+.cardButtons {
+    border-style: none;
+    background-color: transparent;
+    border: 1px groove white;
+    border-radius: 20px;
 }
-
 
 .checkmark {
     display: inline-block;
     flex-direction: row;
     width: 22px;
     height:22px;
-    -ms-transform: rotate(45deg); /* IE 9 */
-    /* -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-    /* transform: rotate(45deg);
-}  */
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
 
 .checkmark:hover::after {
     position: absolute;
