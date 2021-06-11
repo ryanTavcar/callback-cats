@@ -10,7 +10,7 @@ const Sidebar = ({isOpen, toggle}) => {
                 </Icon>
                 <SidebarWrapper>
                     <SidebarMenu>
-                        <SidebarLink to="../index">Home</SidebarLink>
+                        <SidebarLink to="/">Home</SidebarLink>
                         <SidebarLink to="../../pages/profile">Profile</SidebarLink>
                         <SidebarLink to="../../pages/Matches">Favourite</SidebarLink>
                         <SidebarLink to="../../pages/about">About</SidebarLink>
