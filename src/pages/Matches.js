@@ -1,16 +1,28 @@
-import React,{useState, useEffect} from 'react';
-import Match from './Match'
+import React,{useState,useEffect} from 'react';
+// // import TinderCard from 'react-tinder-card';
+// import '../styles/Card.css';
+// import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
+// import CancelOutlinedIcon from '@material-ui/icons/CancelOutlined';
+// import IconButton from '@material-ui/core/IconButton';
+// import {Link} from 'react-router-dom';
+// import React,{useState, useEffect} from 'react';
+// import Match from './Match'
 // import TinderCard from 'react-tinder-card';
 import '../styles/Card.css';
 import Card from '../components/Card';
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+// import {
+//     BrowserRouter as Router,
+//     Switch,
+//     Route,
+//     Link
+// } from "react-router-dom";
 
+// const BoldParagraph = ({firstWord,theRest}) => {
+//     return(
+//         <p><b>{firstWord}</b>{theRest}</p>
+//     )
+// }
 const Matches = () => {
 
     const [useData, setData] = useState([]);
