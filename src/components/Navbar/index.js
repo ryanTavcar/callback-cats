@@ -21,7 +21,7 @@ const Navbar = ({ toggle }) => {
                     <NavMenu>
                         <NavMenu>
                             <NavItem>
-                                <NavLink to="../../index">Home</NavLink>
+                                <NavLink to="/">Home</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink to="../../pages/profile">Profile</NavLink>

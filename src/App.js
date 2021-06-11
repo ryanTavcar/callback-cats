@@ -14,7 +14,7 @@ function App() {
       <Router>
         <NavbarMain />
           <Switch>
-            <Route exact path='/index'>
+            <Route exact path='/'>
               <Home />
             </Route >
             <Route exact path='/pages/matches'>
