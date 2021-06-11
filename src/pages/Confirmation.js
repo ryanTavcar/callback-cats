@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/confirmation.css';
 
 
-
 const Confirmation = () => {
     return (
         <div>
