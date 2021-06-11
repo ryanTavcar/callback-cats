@@ -44,7 +44,7 @@ const Matches = () => {
 
             <div className="main-container"> 
             {useData.map( ({ _id, name, description, likes, dislikes, image, availability, suburbs, location }) => (
-                <div className='container' key={_id}>
+                <div key={_id}>
                     <Card name={name}
                         description={description}
                         likes={likes}
