@@ -10,7 +10,7 @@ function About() {
     const ShravaniDes = "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
 
     return (
-        <div >
+        <div className ='mainContainer'>
             <div className="about-container">
                 <h2 className="heading">Welcome to the ultimate dating app for cats!</h2>
                 <p className="text">"Is your furry feline friend hoping to build some fantastically furry friendships? If so, feel free to look
@@ -30,6 +30,9 @@ function About() {
                 </div>
                 <div className="Developer-card" >
                     <Card name={"Shravani"} description={ShravaniDes} image={"pretty-kitty.jpg"}/>
+                </div>
+                <div className="Developer-card" >
+                    <Card name={"Joey"} description={ShravaniDes} image={"mr.whiskers.jpg"}/>
                 </div>
                 
             </div>
