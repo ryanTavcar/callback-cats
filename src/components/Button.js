@@ -45,7 +45,7 @@ export const ButtonText = styled.div`
 
 function Button() {
     const history = useHistory();
-    const navigateTo = () => history.push('../../pages/Match');
+    const navigateTo = () => history.push('../../pages/match');
   
     return (
      <ButtonClick>
