@@ -7,6 +7,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import Button from '../components/Button'
 
 function Home() {
 
@@ -15,7 +16,8 @@ function Home() {
             <div>
                 <img className="desktop-logo" src={require('../catlogo.png').default} alt="callback cats logo" ></img>
             </div>
-            <h3>Purrr-haps We Can Cuddle Later?</h3>
+            <h2 className="heading">Purrr-haps We Can Cuddle Later?</h2>
+            <Button />
         </div>
     )
 }

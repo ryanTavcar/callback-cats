@@ -11,10 +11,10 @@ const NavbarMain = () => {
     }
 
     return (
-        <>
+        <React.Fragment>
            <Sidebar isOpen={isOpen} toggle={toggle}/>
            <Navbar toggle={toggle}/> 
-        </>
+        </React.Fragment>
     )
 }
 
