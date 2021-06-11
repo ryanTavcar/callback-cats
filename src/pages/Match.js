@@ -28,10 +28,13 @@ const Match = () => {
     
 
     return (
+        <>
+        <h3>Browse through potential dates!</h3>
         <div className="main-container"> 
             {useData.map( ({ _id, name, description, likes, dislikes, image, availability, suburbs, location }) => (
                 <div className='container' key={_id}>
-                    <Card id={_id} 
+                    <Card
+                        id={_id} 
                         name={name}
                         description={description}
                         likes={likes}
@@ -41,23 +44,10 @@ const Match = () => {
                         location={location}
                         suburbs={suburbs}
                     />
-                    {/* <div className = 'cardContainer'>
-                        <div className="cardImage">
-                            <img src={`/`+ image} alt={name} height='400px' width='100%'/>
-                        </div>
-                        <div>
-                            <h3>{name}</h3>
-                            <p>{description}</p>
-                            <p>Likes: {likes}</p>
-                            <p>Dislikes: {dislikes}</p>
-                            <p>Location: {location}</p>
-                            <p>Suburb: {suburbs}</p>
-                            <p>Availability: {availability}</p>
-                        </div> 
-                    </div> */}
-                </div>
-            ))}
-        </div>
+                    </div>
+                ))}
+            </div>
+        </>
     )
 }
 
