@@ -45,7 +45,7 @@ const Matches = () => {
             {useData.length === 0 && <h4 style={{textAlign: 'center'}}>No matches</h4>}
             <div className="main-container"> 
             {useData.map( ({ _id, name, description, likes, dislikes, image, availability, suburbs, location }) => (
-                <div className='container' key={_id}>
+                <div key={_id}>
                     <Card name={name}
                         description={description}
                         likes={likes}
