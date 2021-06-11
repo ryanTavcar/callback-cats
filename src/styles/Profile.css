@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
 .Developer-cards-container{
     width: 100vw;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.heading{
+    font-family: 'Roboto', sans-serif;
 }
 
 .card-container {
@@ -55,6 +65,7 @@
 
 
 .form-label {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
     margin-bottom: .800rem;
     font-weight: 600;

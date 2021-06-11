@@ -9,7 +9,7 @@ function Profile() {
 
     return (
         <div>
-            <h3>Create your profile</h3>
+            <h3 className="heading">Create your profile</h3>
             <Form/>
         </div>
     )

@@ -46,8 +46,6 @@ function Card(props) {
                 <div >
                     <img src={'/' + props.image} alt="card-img" height='300px' width='100%'/>
                 </div>
-                {/* <h3>{props.name}</h3>
-                <p>{props.description}</p> */}
                 <div>
                     <h3>{props.name}</h3>
                     <p className="cardText" >{props.description}</p>
@@ -69,27 +67,7 @@ function Card(props) {
                 }
             </div>
         </div>
-        // <div className="Card"> 
-        //     <div >
-        //         <div >
-        //             <img src={'/' + props.image} alt="card-img" height='300px' width='100%'/>
-        //         </div>
-        //         {/* <h3>{props.name}</h3>
-        //         <p>{props.description}</p> */}
-        //         <div>
-        //             <h3>{props.name}</h3>
-        //             <p>{props.description}</p>
-        //             <p>Likes: {props.likes}</p>
-        //             <p>Dislikes: {props.dislikes}</p>
-        //             <p>Location: {props.location}</p>
-        //             <p>Suburb: {props.suburbs}</p>
-        //             <p>Availability: {props.availability}</p>
-        //         </div>
-        //         {matchCard === '/pages/users/:id' &&
-        //             <button className="matchButton" onClick={ () => onMatchButton(props.id, props.name, props.description, props.likes, props.dislikes, props.image, props.availability, props.suburbs, props.location)}>Match</button>
-        //         }
-        //     </div>
-        // </div>
+
     )
 }
 
