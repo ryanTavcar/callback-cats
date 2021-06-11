@@ -3,7 +3,7 @@ import {BrowserRouter as Router,Switch,Route } from 'react-router-dom';
 import NavbarMain from './components/NavbarMain';
 import Matches from './pages/Matches.js';
 import Match from './pages/Match.js';
-import Confirmation from './pages/Confirmation.js';
+import Confirmation from './pages/confirmation.js';
 import Home from './pages/';
 import About from './pages/about';
 import Profile from './pages/profile'
