@@ -5,10 +5,34 @@ import '../styles/About.css'
 
 function About() {
 
-    const IrinaDes = "Loved working on this project and especially on wireframes with all my love to cats."
+    const IrinaDes = "Lover of coffee and nice design. And I love Figma. And Cats."
+    const IrinaLikes = "Snowy mountains and hot wine"
+    const IrinaDislikes = "40C with no aircon"
+    const IrLocation = "Leafy Camberwell"
+    const IrSuburbs = "Eastern Surburbs"
+    const IrAvailability = "Everyday"
+
     const RyanDes = "Check me out mum, im featured as a developer!"
-    const ShravaniDes = "Likes spending time with friends & families, dislikes: broccoli, fizzy drinks."
+    const RyanLikes = "Rare steak"
+    const RyanDislikes = "Well done steak"
+    const RyLocation = "Science Works"
+    const RySuburbs = "South Spotswood"
+    const RyAvailability = "Everyday"
+
+    const ShravaniDes = ""
+    const ShravaniLikes = "spending time with friends & families, dislikes: broccoli, fizzy drin"
+    const ShravaniDislikes = ""
+    const ShLocation = "Melbourne City"
+    const ShSuburbs = ""
+    const ShAvailability = ""
+
     const JoeyDes = "Loves computers and cats. Hoping one day there will be some sort of hybrid."
+    const JoeyLikes = "Little kitties, music"
+    const JoeyDislikes = "Cauliflower"
+    const JoeyLocation = "Packer Park"
+    const JoeySuburbs = "Ormond"
+    const JoeyAvailability = "When internet is working"
+
 
     return (
         <div className ='mainContainer'>
@@ -24,16 +48,16 @@ function About() {
             </div>
             <div className="Developer-cards-container">
                 <div className="Developer-card" >
-                    <Card name={"Irina"} description={IrinaDes} image={"bob-marly.jpg"}/>
+                    <Card name={"Irina"} description={IrinaDes} likes={IrinaLikes} dislikes={IrinaDislikes} location={IrLocation} suburbs={IrSuburbs} availability={IrAvailability}image={"bob-marly.jpg"}/>
                 </div>
                 <div className="Developer-card" >
-                    <Card name={"Ryan"} description={RyanDes} image={"doge-licking-nose.jpg"}/>
+                    <Card name={"Ryan"} description={RyanDes} likes={RyanLikes} dislikes={RyanDislikes} location={RyLocation} suburbs={RySuburbs} availability={RyAvailability}image={"doge-licking-nose.jpg"}/>
                 </div>
                 <div className="Developer-card" >
-                    <Card name={"Shravani"} description={ShravaniDes} image={"pretty-kitty.jpg"}/>
+                    <Card name={"Shravani"} description={ShravaniDes} likes={ShravaniLikes} dislikes={ShravaniDislikes} location={ShLocation} suburbs={ShSuburbs} availability={ShAvailability}image={"pretty-kitty.jpg"}/>
                 </div>
                 <div className="Developer-card" >
-                    <Card name={"Joey"} description={JoeyDes} image={"mr.whiskers.jpg"}/>
+                    <Card name={"Joey"} description={JoeyDes} likes={JoeyLikes} dislikes={JoeyDislikes} location={JoeyLocation} suburbs={JoeySuburbs} availability={JoeyAvailability}image={"mr.whiskers.jpg"}/>
                 </div>
                 
             </div>
