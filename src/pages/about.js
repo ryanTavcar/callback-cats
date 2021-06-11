@@ -5,9 +5,10 @@ import '../styles/About.css'
 
 function About() {
 
-    const IrinaDes = "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-    const RyanDes = "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-    const ShravaniDes = "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+    const IrinaDes = "Loved working on this project and especially on wireframes with all my love to cats."
+    const RyanDes = "Check me out mum, im featured as a developer!"
+    const ShravaniDes = "Likes spending time with friends & families, dislikes: broccoli, fizzy drinks."
+    const JoeyDes = "Loves computers and cats. Hoping one day there will be some sort of hybrid."
 
     return (
         <div className ='mainContainer'>
@@ -32,7 +33,7 @@ function About() {
                     <Card name={"Shravani"} description={ShravaniDes} image={"pretty-kitty.jpg"}/>
                 </div>
                 <div className="Developer-card" >
-                    <Card name={"Joey"} description={ShravaniDes} image={"mr.whiskers.jpg"}/>
+                    <Card name={"Joey"} description={JoeyDes} image={"mr.whiskers.jpg"}/>
                 </div>
                 
             </div>
